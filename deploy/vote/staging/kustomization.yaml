@@ -7,3 +7,9 @@ patchesStrategicMerge:
 - service.yaml
 
 namespace: instavote
+
+configMapGenerator:
+  - name: vote
+    literals:
+      - OPTION_A="Josh and Viv"
+      - OPTION_B="Zagnut"
